@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url(font/Open_Sans/OpenSans-Regular.woff);
+}
+
+* {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #161616;
+    font-family: 'OpenSansRegular';
+}
+
+.visit_card {
+    display: flex;
+    width: 550px;
+    height: 300px;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 12%;
+    border: 1px solid #262626;
+    border-radius: 5px;
+}
+
+.note {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #083ABB;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.note img {
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left_side {
+    width: 50%;
+    height: 100%;
+    background-color: #083ABB;
+}
+
+.right_side {
+    background-color: #083ABB;
+    background-image: url(images/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+}
+
+.name {
+    color: #f4f4f4;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 0.7em;
+    font-family: 'OpenSansRegular';
+}
+
+.name h2 {
+    padding-top: 10px;
+    font-size: 1.2em;
+}
+
+.links {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    padding-right: 0px;
+    justify-content: space-around;
+}
+
+.links svg {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 80%;
+    color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.about_me {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about_me svg {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+}
+
+.e_mail {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    margin-left: -10%;
+    color: #f4f4f4;
+}
+
+.envelope {
+    position: relative;
+    top: 75%;
+    transform: translateY(-50%);
+}
+
+.telephone {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;  
+    color: #f4f4f4;
+}
+
+.phone {
+    position: relative;
+    top: 70%;
+    transform: translateY(-50%);
+}
+

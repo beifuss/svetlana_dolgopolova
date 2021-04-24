@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url(font/Open_Sans/OpenSans-Regular.woff);
+}
+
+* {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 18px;
+    
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #161616;
+    color: #f4f4f4;
+    font-family: 'OpenSans';
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.header svg {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.header svg path{
+    fill: #083ABB;
+}
+
+.header svg:hover path {
+    fill: #f4f4f4;
+    transition: fill 0.5s ease-in-out;
+}
+
+.biography {
+    width: 50%;
+    height: 90%;
+}
+
+.about {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.biography p {
+    margin-bottom: 30px;
+    font-size: 1em;
+    margin-left: 20px;
+}
+
+.biography a {
+    color: #083ABB;
+}
+
+.biography a:hover {
+    color: #f4f4f4;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+}
+
+.hand_and_notes {
+    width: 50%;
+    height: 100%;
+}
+
+.hand img {
+    transform: scale(-1, 1);
+    height: 60%;
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 30%;
+}
+
+.flying_notes {
+    display: flex;
+    gap: 30px;
+    margin-top: 25%;
+    margin-left: 30%;
+}
+
+.flying_notes svg {
+    width: 80px;
+    height: 80px;
+}
+
+.note {
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 15%;
+    animation-name: floating;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.play_button {
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.microphone {
+    position: absolute;
+    margin-left: 8%;
+    animation-name: floating;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.stop_button {
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 5%;
+    animation-name: floating;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.vinil {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 14%;
+    animation-name: floating;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, -25px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
