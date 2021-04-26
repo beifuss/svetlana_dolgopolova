@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'OpenSans';
-    src: url(font/Open_Sans/OpenSans-Regular.woff);
+    font-family: 'PTSans';
+    src: url(font/PTSans-Regular.woff);
 }
 
 * {
@@ -24,7 +24,7 @@ body {
     height: 100%;
     background-color: #161616;
     color: #f4f4f4;
-    font-family: 'OpenSans';
+    font-family: 'PTSans';
 }
 
 .header svg {
@@ -65,4 +65,12 @@ body {
 iframe {
     width: 960px;
     height: 515px;
+}
+
+@media screen and (max-width: 796px) {
+    
+    iframe {
+        width: 450px;
+        height: 250px;
+    }
 }

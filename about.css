@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'OpenSans';
-    src: url(font/Open_Sans/OpenSans-Regular.woff);
+    font-family: 'PTSans';
+    src: url(font/PTSans-Regular.woff);
 }
 
 * {
@@ -22,7 +22,7 @@ body {
     height: 100%;
     background-color: #161616;
     color: #f4f4f4;
-    font-family: 'OpenSans';
+    font-family: 'PTSans';
 }
 
 .wrapper {
@@ -150,3 +150,19 @@ body {
     100%   { transform: translate(0, -0px); }    
 }
 
+@media screen and (max-width: 796px) {
+    html {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .header {
+        margin-bottom: 20px
+    }
+    .hand_and_notes {
+        visibility: hidden;
+        width: 0;
+    }
+    .biography {
+        width: 100%;
+    }
+}

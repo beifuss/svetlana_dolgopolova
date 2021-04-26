@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'OpenSansRegular';
-    src: url(font/Open_Sans/OpenSans-Regular.woff);
+    font-family: 'PTSans';
+    src: url(font/PTSans-Regular.woff);
 }
 
 * {
@@ -21,16 +21,17 @@ body {
     width: 100%;
     height: 100%;
     background-color: #161616;
-    font-family: 'OpenSansRegular';
+    font-family: 'PTSans';
 }
 
 .visit_card {
     display: flex;
     width: 550px;
     height: 300px;
-    position: absolute;
-    margin-left: 30%;
-    margin-top: 12%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    top: 25%;
     border: 1px solid #262626;
     border-radius: 5px;
 }
@@ -79,7 +80,6 @@ body {
     transform: translateY(-50%);
     padding: 10px;
     font-size: 0.7em;
-    font-family: 'OpenSansRegular';
 }
 
 .name h2 {
@@ -107,7 +107,7 @@ body {
     justify-content: space-around;
     text-align: center;
     position: relative;
-    top: 85%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 50px;
@@ -155,5 +155,78 @@ body {
     position: relative;
     top: 70%;
     transform: translateY(-50%);
+}
+
+.mobile {
+    visibility: hidden;
+}
+
+.mobile_nav {
+    visibility: hidden;
+}
+
+.send_a_message {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 796px) {
+    .visit_card {
+        visibility: hidden;
+    }
+    .mobile_nav {
+        visibility: visible;
+    }
+    .mobile_links {
+        padding-top: 20px;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 0;
+        justify-content: space-around;
+    }
+    .mobile_links a {
+        color: #f4f4f4;
+        font-size: 1em;
+        text-decoration: none;
+    }
+    .mobile {
+        color: #f4f4f4;
+        visibility: visible;
+        margin: auto;
+        position: relative;
+        text-align: center;
+        top: -20%;
+    }
+    .mobile_name p {
+        margin-top: 30px;
+        font-size: 1.2em;
+    }
+    .send_a_message {
+        margin: auto;
+        position: relative;
+        text-align: center;
+        top: -15%;
+        visibility: visible;
+        background-color: #083ABB;
+        color: #f4f4f4;
+        font-size: 1em;
+        width: 90px;
+        height: 30px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    a {
+        text-decoration: none;
+    }
+    .text {
+        margin: auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .info {
+        visibility: hidden;
+    }
 }
 
